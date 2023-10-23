@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="wight=device-width,
+        initial-scale=1.0">
+        <title> Aastha Tyagi</title>
+    </head>
+
+    <body>
+        <header>
+            <style>
+                * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 100px;
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+}
+
+
+.nav > .nav-header {
+  display: inline;
+}
+
+/*
+this will be the very first thing on the left header "Aastha Tyagi"
+*/
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 35px;
+  color: #ffffff;
+  padding: 30px 10px 10px 10px;
+  font-family: "Impact", fantasy;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+/*
+these are for all the menu options that there will be
+*/
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 50px 10px 13px 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(183, 183, 183, 0.7);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 5px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.left-container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+</style>
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Aastha Tyagi
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="//github.io/jo_geek" target="_blank">About Me</a>
+      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Projects</a>
+      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Experiences</a>
+      <a href="https://codepen.io/jo_Geek/" target="_blank">Contact</a>
+      
+    </div>
+  </div>
+</header>
+<!-- <div class="header">
+    <h1>Aastha Tyagi</h1>
+</div> -->
+
+<section>
+    <div class="container">
+        <div style="display: flex; margin-top: 20px; height: 80vh; margin: 10px;">
+        <div style="width: 50%; text-align: center; background: linear-gradient(0deg, rgb(191, 191, 191), rgb(215, 214, 214),white);" class="left-container">
+          <p style="font-family: 'Noto Sans', sans-serif; font-weight:600; "> 
+            About Me  <br>
+          </p>
+          <p>
+          Over here I will add a couple of senteces that will state how I am
+          interested in computer science. I will also add something realted
+          to how I am extremely excited to explore and enrich myself with the 
+          countless opportunities we have through CS.
+          </p>
+        </div>
+        <div style="width: 50%; text-align: center; background: linear-gradient(0deg, rgb(191, 191, 191), rgb(215, 214, 214),white);" class="right-container">
+          In this section I will add a professional picture of myself 
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section> 
+    <div class="projects">
+
+    </div>
+
+</section>
+
+
+
+
+    </body>
+</html>
